@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chic By doujat | Vêtements pour Fashion Girls</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            pink: '#fdf2f4',      // Rose poudré luxueux
+                            nude: '#F5EBE1',      // Beige nude
+                            bordeaux: '#8B3A3A',  // Bordeaux/Terracotta chic
+                            gold: '#C5A059',      // Doré élégant
+                            dark: '#1A1A1A',      // Noir doux pour le texte
+                        },
+                        whatsapp: '#25D366',
+                        whatsappDark: '#128C7E'
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'bounce-slight': 'bounceSlight 2s infinite ease-in-out',
+                    },
+                    keyframes: {
+                        bounceSlight: {
+                            '0%, 100%': { transform: 'translateY(-5%)' },
+                            '50%': { transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        .whatsapp-gradient {
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+        }
+        .hero-pattern {
+            background-color: #fdf2f4;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f5ebe1' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .image-collage img {
+            transition: transform 0.5s ease;
+        }
+        .image-collage img:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body class="font-sans text-brand-dark bg-white antialiased selection:bg-brand-pink selection:text-brand-dark">
+
+    <!-- Promo Banner -->
+    <div class="bg-brand-bordeaux text-white text-center py-2.5 px-4 text-xs md:text-sm font-medium tracking-wide">
+        ✨ LIVRAISON GRATUITE partout au Maroc pour toute commande aujourd'hui 🇲🇦
+    </div>
+
+    <!-- Header -->
+    <header class="sticky top-0 w-full glass-nav shadow-sm z-40 border-b border-brand-pink/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3 cursor-pointer" onclick="window.scrollTo(0,0)">
+                <div class="w-12 h-12 rounded-full bg-brand-pink flex items-center justify-center text-2xl shadow-inner border border-white">
+                    🎀
+                </div>
+                <div class="flex flex-col">
+                    <h1 class="font-serif text-2xl font-bold tracking-wider text-brand-dark leading-none">
+                        Chic By doujat
+                    </h1>
+                    <span class="text-[10px] text-brand-bordeaux font-semibold uppercase tracking-widest mt-1">Fashion Girls</span>
+                </div>
+            </div>
+            
+            <div class="hidden lg:flex items-center gap-2 text-sm font-medium text-brand-gold bg-brand-pink/30 border border-brand-nude px-4 py-1.5 rounded-full">
+                <i class="fas fa-truck-fast"></i> Livraison partout au Maroc
+            </div>
+
+            <!-- WhatsApp Link 0638509019 -->
+            <a href="https://wa.me/212638509019?text=Bonjour%20Chic%20By%20doujat%20%F0%9F%8E%80%2C%20je%20souhaite%20voir%20le%20catalogue." target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 whatsapp-gradient text-white px-6 py-2.5 rounded-full font-medium hover:shadow-lg hover:scale-105 transition-all duration-300 shadow-md text-sm md:text-base group">
+                <i class="fab fa-whatsapp text-xl group-hover:animate-bounce-slight"></i>
+                <span class="hidden sm:inline font-semibold">Contactez-nous</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative hero-pattern pt-16 pb-24 md:pt-28 md:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+            
+            <div class="text-center lg:text-left order-2 lg:order-1">
+                <div class="inline-flex items-center gap-2 py-1.5 px-4 rounded-full bg-white border border-brand-pink text-xs font-bold tracking-widest text-brand-bordeaux mb-6 shadow-sm">
+                    <span class="w-2 h-2 rounded-full bg-brand-bordeaux animate-pulse"></span>
+                    NOUVELLE COLLECTION DISPONIBLE
+                </div>
+                
+                <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-6 text-brand-dark">
+                    Sublimez Votre Style Avec Nos Créations <br class="hidden md:block"/>
+                    <span class="text-brand-bordeaux italic">Uniques & Raffinées</span>
+                </h2>
+                
+                <p class="text-base md:text-lg text-gray-700 mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                    Découvrez notre sélection exclusive de vêtements pour <strong>Fashion Girls</strong>. Des coupes parfaites, des tissus nobles et un design unique qui vous fera rayonner au quotidien. 
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <!-- Main WhatsApp CTA -->
+                    <a href="https://wa.me/212638509019?text=Bonjour%20Chic%20By%20doujat%20%F0%9F%8E%80%2C%20je%20viens%20depuis%20votre%20site%20web%20et%20je%20souhaite%20passer%20une%20commande." target="_blank" class="whatsapp-gradient text-white px-8 py-4.5 rounded-full font-bold text-lg hover:shadow-xl hover:scale-[1.02] transition-all flex items-center justify-center gap-3 shadow-green-200/50 shadow-lg border-2 border-transparent">
+                        <i class="fab fa-whatsapp text-2xl"></i> 
+                        Commander sur WhatsApp
+                    </a>
+                    
+                    <a href="https://instagram.com/chic_by.doujat" target="_blank" class="bg-white text-brand-dark border border-gray-200 px-8 py-4 rounded-full font-semibold text-base hover:bg-gray-50 hover:border-gray-300 transition-all flex items-center justify-center gap-2 shadow-sm">
+                        <i class="fab fa-instagram text-xl bg-clip-text text-transparent bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-500"></i> Voir notre Instagram
+                    </a>
+                </div>
+                
+                <div class="mt-8 flex items-center justify-center lg:justify-start gap-4 text-sm text-gray-500 font-medium">
+                    <span class="flex items-center gap-1.5"><i class="fas fa-check-circle text-whatsapp"></i> Réponse rapide</span>
+                    <span class="flex items-center gap-1.5"><i class="fas fa-check-circle text-whatsapp"></i> Support 7j/7</span>
+                </div>
+            </div>
+            
+            <!-- Hero Image Collage -->
+            <div class="relative order-1 lg:order-2 image-collage">
+                <div class="relative w-full max-w-lg mx-auto aspect-[4/5] lg:aspect-auto lg:h-[600px]">
+                    <!-- Main Center Image -->
+                    <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Style Chic By Doujat" class="absolute inset-0 w-full h-full object-cover rounded-t-full rounded-b-3xl shadow-2xl border-4 border-white z-20">
+                    
+                    <!-- Decorative Elements -->
+                    <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-xl flex items-center gap-3 z-30 animate-bounce-slight">
+                        <div class="w-12 h-12 bg-brand-nude rounded-full flex items-center justify-center text-xl shadow-inner">🛍️</div>
+                        <div>
+                            <p class="text-sm font-bold text-brand-dark leading-tight">Commande Facile</p>
+                            <p class="text-[11px] text-gray-500">Via WhatsApp</p>
+                        </div>
+                    </div>
+                    
+                    <div class="absolute top-1/4 -right-8 bg-white/90 backdrop-blur px-4 py-3 rounded-2xl shadow-lg flex flex-col items-center gap-1 z-30 transform rotate-3">
+                        <div class="text-brand-gold flex text-sm">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-xs font-bold text-gray-800">+1000 Clientes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Decorative blobs -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-brand-nude rounded-full mix-blend-multiply filter blur-3xl opacity-40 translate-x-1/3 -translate-y-1/3"></div>
+        <div class="absolute bottom-0 left-0 w-72 h-72 bg-brand-pink rounded-full mix-blend-multiply filter blur-3xl opacity-60 -translate-x-1/3 translate-y-1/3"></div>
+    </section>
+
+    <!-- Barre des Engagements -->
+    <section class="py-12 bg-white relative z-20 mx-4 md:mx-auto max-w-6xl -mt-10 rounded-2xl shadow-xl border border-gray-100">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 px-6 text-center divide-x divide-gray-100">
+            <div class="px-2 flex flex-col items-center group">
+                <div class="w-14 h-14 bg-brand-pink rounded-full flex items-center justify-center text-2xl mb-3 text-brand-bordeaux group-hover:scale-110 transition-transform">👑</div>
+                <h3 class="font-bold text-sm md:text-base text-gray-800">Design Unique</h3>
+                <p class="text-xs text-gray-500 mt-1">Des créations exclusives</p>
+            </div>
+            <div class="px-2 flex flex-col items-center group">
+                <div class="w-14 h-14 bg-brand-pink rounded-full flex items-center justify-center text-2xl mb-3 text-brand-bordeaux group-hover:scale-110 transition-transform">🧵</div>
+                <h3 class="font-bold text-sm md:text-base text-gray-800">Détails Raffinés</h3>
+                <p class="text-xs text-gray-500 mt-1">Finitions parfaites</p>
+            </div>
+            <div class="px-2 flex flex-col items-center group">
+                <div class="w-14 h-14 bg-brand-pink rounded-full flex items-center justify-center text-2xl mb-3 text-brand-bordeaux group-hover:scale-110 transition-transform">🇲🇦</div>
+                <h3 class="font-bold text-sm md:text-base text-gray-800">Livraison Partout</h3>
+                <p class="text-xs text-gray-500 mt-1">Express au Maroc</p>
+            </div>
+            <div class="px-2 flex flex-col items-center group">
+                <div class="w-14 h-14 bg-brand-pink rounded-full flex items-center justify-center text-2xl mb-3 text-brand-bordeaux group-hover:scale-110 transition-transform">💵</div>
+                <h3 class="font-bold text-sm md:text-base text-gray-800">Paiement Sécurisé</h3>
+                <p class="text-xs text-gray-500 mt-1">Cash à la livraison</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section / Instagram to WhatsApp Bridge -->
+    <section class="py-24 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 max-w-2xl mx-auto">
+                <h2 class="font-serif text-3xl md:text-5xl font-bold mb-6 text-brand-dark">Vu sur notre Instagram ?</h2>
+                <p class="text-lg text-gray-600">
+                    Vous avez craqué pour un tailleur, une robe ou un ensemble sur notre page <span class="font-bold text-brand-bordeaux">@chic_by.doujat</span> ? Commandez-le directement en nous envoyant un message.
+                </p>
+            </div>
+
+            <!-- Steps -->
+            <div class="grid md:grid-cols-3 gap-8 relative">
+                <!-- Connecting Line for Desktop -->
+                <div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-gray-100 -z-10 -translate-y-1/2"></div>
+                
+                <!-- Step 1 -->
+                <div class="bg-white border border-gray-100 p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow text-center relative">
+                    <div class="w-16 h-16 bg-brand-nude rounded-full flex items-center justify-center text-2xl mx-auto mb-6 text-brand-bordeaux font-serif font-bold shadow-sm">1</div>
+                    <h3 class="text-xl font-bold mb-3">Prenez un Screenshot</h3>
+                    <p class="text-sm text-gray-500">Capturez l'article qui vous plaît sur notre story ou notre feed Instagram.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-white border border-gray-100 p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow text-center relative">
+                    <div class="w-16 h-16 whatsapp-gradient rounded-full flex items-center justify-center text-2xl mx-auto mb-6 text-white font-serif font-bold shadow-md shadow-green-200">2</div>
+                    <h3 class="text-xl font-bold mb-3">Envoyez sur WhatsApp</h3>
+                    <p class="text-sm text-gray-500">Cliquez sur le bouton WhatsApp et envoyez-nous la photo avec votre taille.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-white border border-gray-100 p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow text-center relative">
+                    <div class="w-16 h-16 bg-brand-nude rounded-full flex items-center justify-center text-2xl mx-auto mb-6 text-brand-bordeaux font-serif font-bold shadow-sm">3</div>
+                    <h3 class="text-xl font-bold mb-3">Recevez votre Commande</h3>
+                    <p class="text-sm text-gray-500">Nous validons la commande ensemble et vous payez à la réception du colis !</p>
+                </div>
+            </div>
+
+            <!-- Big CTA -->
+            <div class="mt-20 bg-brand-pink/30 rounded-3xl p-8 md:p-12 text-center border border-brand-pink relative overflow-hidden">
+                <!-- Background decorative icons -->
+                <i class="fab fa-whatsapp absolute -left-10 -top-10 text-9xl text-white opacity-40 rotate-12"></i>
+                <i class="fas fa-heart absolute -right-5 -bottom-5 text-8xl text-white opacity-40 -rotate-12"></i>
+                
+                <div class="relative z-10">
+                    <h2 class="font-serif text-3xl md:text-4xl font-bold mb-4 text-brand-dark">Prête à passer commande ? 🎀</h2>
+                    <p class="text-gray-600 mb-8 max-w-lg mx-auto">Notre équipe est disponible sur WhatsApp pour répondre à vos questions, vous conseiller sur les tailles et enregistrer votre commande.</p>
+                    
+                    <a href="https://wa.me/212638509019?text=Bonjour%20Chic%20By%20doujat%20%F0%9F%8E%80%2C%20je%20souhaite%20passer%20une%20commande%20ou%20avoir%20des%20informations." target="_blank" class="inline-flex items-center justify-center gap-3 whatsapp-gradient text-white px-10 py-5 rounded-full font-bold text-lg md:text-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 shadow-xl shadow-green-200/60">
+                        <i class="fab fa-whatsapp text-3xl"></i>
+                        Discuter avec nous (0638-509019)
+                    </a>
+                    <p class="mt-4 text-xs font-semibold text-gray-500 uppercase tracking-widest"><i class="fas fa-lock text-brand-bordeaux"></i> Paiement à la livraison garanti</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-brand-pink overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold mb-4 text-brand-dark">Elles adorent Chic By Doujat 💖</h2>
+                <p class="text-gray-600">Rejoignez nos centaines de clientes satisfaites partout au Maroc.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Avis 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm relative border border-white">
+                    <div class="text-brand-gold flex gap-1 mb-4 text-sm">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic mb-6 text-sm">"J'ai reçu mon tailleur hier, la qualité est incroyable ! La coupe est parfaite et la livraison était super rapide sur Casablanca. Le contact sur WhatsApp était très pro. Merci !"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-brand-nude rounded-full flex items-center justify-center font-bold text-brand-bordeaux">S</div>
+                        <div>
+                            <p class="font-bold text-sm text-brand-dark">Salma B.</p>
+                            <p class="text-xs text-gray-400">Casablanca</p>
+                        </div>
+                    </div>
+                    <i class="fab fa-instagram absolute top-6 right-6 text-2xl text-gray-100"></i>
+                </div>
+
+                <!-- Avis 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm relative border border-white">
+                    <div class="text-brand-gold flex gap-1 mb-4 text-sm">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic mb-6 text-sm">"L'ensemble en lin est magnifiquement cousu. Le tissu est léger, parfait pour l'été. C'est ma deuxième commande via WhatsApp et je ne suis jamais déçue."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-brand-nude rounded-full flex items-center justify-center font-bold text-brand-bordeaux">M</div>
+                        <div>
+                            <p class="font-bold text-sm text-brand-dark">Meriem E.</p>
+                            <p class="text-xs text-gray-400">Rabat</p>
+                        </div>
+                    </div>
+                    <i class="fab fa-instagram absolute top-6 right-6 text-2xl text-gray-100"></i>
+                </div>
+
+                <!-- Avis 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm relative border border-white">
+                    <div class="text-brand-gold flex gap-1 mb-4 text-sm">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="text-gray-600 italic mb-6 text-sm">"Très belle robe bordeaux, exactement comme sur les photos Instagram. Le paiement à la livraison rassure beaucoup. Bravo pour votre sérieux les filles."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-brand-nude rounded-full flex items-center justify-center font-bold text-brand-bordeaux">F</div>
+                        <div>
+                            <p class="font-bold text-sm text-brand-dark">Fatima Z.</p>
+                            <p class="text-xs text-gray-400">Marrakech</p>
+                        </div>
+                    </div>
+                    <i class="fab fa-instagram absolute top-6 right-6 text-2xl text-gray-100"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6">
+            <h2 class="font-serif text-3xl font-bold mb-10 text-center text-brand-dark">Questions Fréquentes</h2>
+            
+            <div class="space-y-4">
+                <!-- Q1 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+                    <button class="faq-btn w-full px-6 py-4 text-left font-semibold flex justify-between items-center bg-gray-50 hover:bg-brand-pink/30 transition text-brand-dark">
+                        Comment passer commande ?
+                        <i class="fas fa-chevron-down text-brand-bordeaux transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 py-4 text-gray-600 text-sm bg-white">
+                        C'est très simple ! Cliquez sur l'un des boutons WhatsApp de cette page. Envoyez-nous la photo de l'article qui vous plaît, précisez votre taille, votre nom, votre ville et votre numéro de téléphone. Nous nous occupons du reste.
+                    </div>
+                </div>
+
+                <!-- Q2 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+                    <button class="faq-btn w-full px-6 py-4 text-left font-semibold flex justify-between items-center bg-gray-50 hover:bg-brand-pink/30 transition text-brand-dark">
+                        Comment se passe la livraison ?
+                        <i class="fas fa-chevron-down text-brand-bordeaux transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 py-4 text-gray-600 text-sm bg-white">
+                        Nous livrons partout au Maroc via Amana ou nos livreurs partenaires (selon votre ville). La livraison prend généralement entre 24h et 48h jours ouvrables.
+                    </div>
+                </div>
+                
+                <!-- Q3 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+                    <button class="faq-btn w-full px-6 py-4 text-left font-semibold flex justify-between items-center bg-gray-50 hover:bg-brand-pink/30 transition text-brand-dark">
+                        Comment puis-je payer ma commande ?
+                        <i class="fas fa-chevron-down text-brand-bordeaux transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 py-4 text-gray-600 text-sm bg-white">
+                        Pour votre sécurité et votre confort, nous proposons exclusivement le paiement à la livraison (Cash on Delivery). Vous payez uniquement lorsque vous recevez votre colis en mains propres !
+                    </div>
+                </div>
+
+                <!-- Q4 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+                    <button class="faq-btn w-full px-6 py-4 text-left font-semibold flex justify-between items-center bg-gray-50 hover:bg-brand-pink/30 transition text-brand-dark">
+                        Puis-je échanger si la taille ne me correspond pas ?
+                        <i class="fas fa-chevron-down text-brand-bordeaux transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 py-4 text-gray-600 text-sm bg-white">
+                        Oui, les échanges de taille sont possibles sous 48h après la réception de la commande, sous réserve de disponibilité des stocks. Les frais de retour/renvoi sont à la charge du client. Contactez-nous sur WhatsApp pour initier un échange.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-10 mb-12 border-b border-gray-800 pb-12 text-center md:text-left">
+                <div class="max-w-sm">
+                    <h2 class="font-serif text-2xl font-bold mb-4">Chic By doujat 🎀</h2>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Vêtements pour Fashion girls.<br>
+                        Design Unique 👑 | Détails Raffinés 🧵<br>
+                        Livraison partout au Maroc 🇲🇦
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-center md:items-end">
+                    <h3 class="font-bold text-lg mb-4 text-brand-gold">Restons Connectées</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://instagram.com/chic_by.doujat" target="_blank" class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gradient-to-tr hover:from-yellow-400 hover:via-pink-500 hover:to-purple-500 transition-all shadow-lg">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="https://wa.me/212638509019" target="_blank" class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center hover:bg-whatsapp transition-all shadow-lg">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                        </a>
+                    </div>
+                    <p class="mt-4 text-gray-400 text-sm">
+                        <i class="fas fa-phone-alt mr-2"></i> 0638-509019
+                    </p>
+                </div>
+            </div>
+            
+            <div class="text-center text-gray-500 text-xs flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> Chic By doujat. Tous droits réservés.</p>
+                <p>Développé pour une conversion WhatsApp rapide.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button - Extremely Prominent -->
+    <a href="https://wa.me/212638509019?text=Bonjour%20Chic%20By%20doujat%20%F0%9F%8E%80%2C%20je%20souhaite%20passer%20une%20commande." target="_blank" class="fixed bottom-6 right-6 lg:bottom-8 lg:right-8 z-50 flex items-center group cursor-pointer">
+        <div class="absolute right-full mr-4 bg-white px-4 py-2 rounded-xl shadow-lg border border-gray-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap hidden sm:block">
+            <p class="text-sm font-bold text-gray-800">Besoin d'aide ? 🎀</p>
+            <p class="text-xs text-gray-500">Contactez-nous ici</p>
+            <!-- Little triangle pointing to button -->
+            <div class="absolute top-1/2 -right-2 w-4 h-4 bg-white border-r border-t border-gray-100 transform rotate-45 -translate-y-1/2"></div>
+        </div>
+        
+        <div class="w-16 h-16 whatsapp-gradient text-white rounded-full flex items-center justify-center text-3xl shadow-xl shadow-green-900/30 hover:scale-110 transition-transform relative">
+            <i class="fab fa-whatsapp"></i>
+            <span class="absolute -top-1 -right-1 w-5 h-5 bg-red-500 text-white text-[10px] font-bold rounded-full flex items-center justify-center border-2 border-white">1</span>
+            <!-- Ping animation effect -->
+            <span class="absolute inline-flex h-full w-full rounded-full bg-whatsapp opacity-40 animate-pulse-slow z-[-1]"></span>
+        </div>
+    </a>
+
+    <!-- Scripts -->
+    <script>
+        // FAQ Accordion Logic
+        document.querySelectorAll('.faq-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                // Close all others
+                document.querySelectorAll('.faq-content').forEach(c => {
+                    if (c !== content && !c.classList.contains('hidden')) {
+                        c.classList.add('hidden');
+                        c.previousElementSibling.querySelector('i').style.transform = 'rotate(0deg)';
+                    }
+                });
+                
+                // Toggle current
+                if (content.classList.contains('hidden')) {
+                    content.classList.remove('hidden');
+                    icon.style.transform = 'rotate(180deg)';
+                } else {
+                    content.classList.add('hidden');
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
